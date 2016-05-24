@@ -1,0 +1,33 @@
+<resources>
+
+    <string name="app_name">ToDo</string>
+
+    <string name="newTask">Nouvelle tâche</string>
+
+    <string name="clickNewTask">Veuillez renseigner votre nouvelle tâche</string>
+    <string name="addTask">Votre tâche a bien été ajoutée</string>
+
+    <string name="nom">Nom : </string>
+    <string name="nomMod">nom</string>
+
+    <string name="com">Description : </string>
+    <string name="comMod">description</string>
+
+    <string name="type">Type : </string>
+
+    <string name="boutonAjouter">  Ajouter  </string>
+
+    <string name="visNom">Nom</string>
+    <string name="visCom">Description</string>
+    <string name="clickOnItem">Visualisation de la tâche</string>
+
+
+    <string-array name="typeElement">
+        <item>Mémo</item>
+        <item>Rendez-Vous</item>
+        <item>Anniversaire</item>
+        <item>Echéance</item>
+        <item>Autre</item>
+    </string-array>
+
+</resources>
