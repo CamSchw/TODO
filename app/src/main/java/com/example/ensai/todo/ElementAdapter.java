@@ -2,6 +2,7 @@ package com.example.ensai.todo;
 
 import android.content.Context;
 import android.support.annotation.DrawableRes;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,14 +53,23 @@ public class ElementAdapter extends BaseAdapter{
         nom.setText(element.getNom());
         commentaire.setText(element.getCommentaire());
 
+        if (element.getType().equals("Mémo")) {type.setImageResource(R.drawable.ic_assignment_memo);}
+        if (element.getType().equals("Rendez-Vous")) {type.setImageResource(R.drawable.ic_people_rdv);}
+        if (element.getType().equals("Anniversaire")) {type.setImageResource(R.drawable.ic_action_anniv);}
+        if (element.getType().equals("Echéance")) {type.setImageResource(R.drawable.ic_today_echeance);}
+
         /*switch (element.getType()) {
-            case "Mémo" : type.setImageResource(R.drawable.ic_assignment_memo);
+            case "Mémo" :
+                type.setImageResource(R.drawable.ic_assignment_memo);
                 break;
-            case "Rendez-Vous" : type.setImageResource(R.drawable.ic_people_rdv);
+            case "Rendez-Vous" :
+                type.setImageResource(R.drawable.ic_people_rdv);
                 break;
-            case "Anniversaire" : type.setImageResource(R.drawable.ic_action_anniv);
+            case "Anniversaire" :
+                type.setImageResource(R.drawable.ic_action_anniv);
                 break;
-            case "Echéance" : type.setImageResource(R.drawable.ic_today_echeance);
+            case "Echéance" :
+                type.setImageResource(R.drawable.ic_today_echeance);
                 break;
             //default et autre
         }*/
